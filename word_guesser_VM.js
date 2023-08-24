@@ -92,7 +92,13 @@
 					}
 				});
 			});
-
+			this.fetchWords('https://raw.githubusercontent.com/SatuSembilanDua/wordlist/main/indo.txt').then(words => {
+				words.forEach(word => {
+					if (!this.correctAnswers.includes(word)) {
+						this.correctAnswers.push(word);
+					}
+				});
+			});
 		}
 
 		fetchWords(url) {
