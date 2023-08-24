@@ -62,7 +62,7 @@ def print_indo():
 		data = json.load(f)
 	txt = ", ".join(data)
 	print(txt)
-	with open("indo.txt", "w") as f:
+	with open("indo_list.txt", "w") as f:
 		f.write(txt)
 
 if __name__ == '__main__':
